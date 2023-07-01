@@ -14,8 +14,8 @@ startup** because it will automatically start only until discord is opened.
 This step depends on your current environment and it's totally optional. 
 
 ## How to create a custom DRC very easly
-I will explain how to get and ending result like this.
-![result](https://imgur.com/i3I4UfK.png)
+I will explain how to get and ending result like this.  
+![result](https://imgur.com/i3I4UfK.png)  
 The phrases are in spanish but that doesn't matter here. I will show you how to replicate this. 
 
 First of all, you need to create a client for your RPC. In order to do that, go to [this link](https://discord.com/developers/applications). Then, create a new application and name it however you want. The name of this application will be the title of 
