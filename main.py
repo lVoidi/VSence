@@ -53,7 +53,6 @@ def is_discord_opened() -> bool:
 
 def update_uptime() -> str:
     uptime = int(time.time() - start)
-
     return f"{uptime//(60**2)}:{uptime//60}:{uptime%60}"
 
 def main():
@@ -82,7 +81,11 @@ def main():
             presence.clear(os.getpid())
 
 if __name__ == "__main__":
-    while not is_discord_opened:
+    while not is_discord_opened():
         print("Discord is not opened. Waiting some time.")
         time.sleep(10)
-    main()
+    
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Saliendo del programa...")
